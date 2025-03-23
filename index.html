@@ -1,83 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
 
-  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/components/button.css" />
 
-  <link rel="stylesheet" href="./style.css" />
+    <title>Ecommerce</title>
+  </head>
 
-  <title>Ecommerce</title>
-</head>
-
-<body>
-  <div class="container">
-    <div class="content-wrapper">
-      <div class="cart">
-        <div class="cart-list">
-          <div class="cart-item">
-            <div class="img">
-              <img
-                src="https://img.freepik.com/free-photo/still-life-books-versus-technology_23-2150062920.jpg?t=st=1742585249~exp=1742588849~hmac=02893eaa7b916511fd5478a040c40a9da4e2b96d640db6bc72a9393afe028dd1&w=996"
-                alt="A product image" class="product-img">
-            </div>
-            <div class="product-feature">
-              <span class="product-heading">A product heading is here.</span>
-              <div class="is-available">
-                <span><small>In Stock</small></span>
-                <span class="hidden"><small>Out of Stock</small></span>
+  <body>
+    <div class="container">
+      <div class="content-wrapper">
+        <h2>Shopping Cart</h2>
+        <div class="cart">
+          <div class="cart-list">
+            <div class="cart-item">
+              <div class="img">
+                <img
+                  src="https://img.freepik.com/free-photo/still-life-books-versus-technology_23-2150062920.jpg?t=st=1742585249~exp=1742588849~hmac=02893eaa7b916511fd5478a040c40a9da4e2b96d640db6bc72a9393afe028dd1&w=996"
+                  alt="A product image"
+                  class="product-img"
+                />
               </div>
-              <div class="delivery-charge">
-                <span>Eligible for FREE delivery</span>
-              </div>
-              <div class="product-detail">
-                <span><small>size: big</small></span>
-                <span><small>color: Red</small></span>
-              </div>
-              <div class="product-row">
-                <span class="product-qty">
-                  <div class="product-add-feature">
-                    <button>
-                      <i class="ri-delete-bin-4-line"></i>
-                    </button>
-                    <input type="number" min="1" max="1000">
-                    <button>
-                      <i class="ri-add-line"></i>
-                    </button>
+              <div class="product-feature">
+                <div class="product-feature-wrapper">
+                  <span class="product-heading"
+                    >A product heading is here.</span
+                  >
+                  <div class="is-available">
+                    <span><small>In Stock</small></span>
+                    <span class="hidden"><small>Out of Stock</small></span>
                   </div>
-                </span>
-                <span class="delete-feature">Delete</span>
-                <span class="save-feature">Save for latter</span>
-                <span class="share-feature">Share</span>
-
+                  <div class="delivery-charge">
+                    <span>Eligible for FREE delivery</span>
+                  </div>
+                  <div class="product-detail">
+                    <p><small>size: big</small></p>
+                    <p><small>color: Red</small></p>
+                  </div>
+                </div>
+                <div class="product-row">
+                  <span class="product-qty">
+                    <div class="product-add-feature">
+                      <button class="decrease-product">
+                        <i class="ri-delete-bin-4-line ri-xl"></i>
+                      </button>
+                      <input
+                        type="number"
+                        min="1"
+                        max="1000"
+                        value="1"
+                        class="product-input"
+                      />
+                      <button class="increase-product">
+                        <i class="ri-add-line ri-xl"></i>
+                      </button>
+                    </div>
+                  </span>
+                  <span class="delete-feature feature">Delete</span>
+                  <span class="save-feature feature">Save for latter</span>
+                  <span class="share-feature feature">Share</span>
+                </div>
+              </div>
+              <div class="product-price">
+                <span>3,215.25 SAR</span>
               </div>
             </div>
-
           </div>
-
+          <hr />
+          <aside>
+            <div class="counter">
+              <div class="sub-total">
+                <span>Subtotal (3 items)</span>
+              </div>
+              <div class="bill">
+                <span>Amount : SAR 38,454.5</span>
+              </div>
+              <button class="primary-btn">Proceed to Buy</button>
+            </div>
+          </aside>
         </div>
-        <aside>
-          <div class="counter">
-            <div class="sub-total">
-              <span>Subtotal (3 items)</span>
-
-            </div>
-            <div class="bill">
-              <span>Amount : SAR 38,454.5</span>
-            </div>
-            <button class="primary-btn">Proceed to Buy</button>
-          </div>
-        </aside>
       </div>
-
-
-
     </div>
-
-  </div>
-  <script src="./script.js"></script>
-</body>
-
+    <script src="./script.js"></script>
+  </body>
 </html>
