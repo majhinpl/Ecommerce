@@ -25,27 +25,6 @@ body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
-image {
-  max-width: 100%;
-}
-
-.hidden {
-  display: none;
-}
-
-.weather-wuery-app .brand {
-  display: flex;
-  align-items: center;
-}
-
-button,
-input {
-  border: none;
-  outline: none;
-  background-color: inherit;
-  cursor: pointer;
-}
-
 .content-wrapper {
   margin: 0 auto;
   width: 1200px;
@@ -60,94 +39,14 @@ input {
   margin: 1rem;
 }
 
-.product {
-  display: flex;
-  align-items: center;
-  background-color: var(--bg-200);
-  border-radius: 10px;
-  padding: 1rem;
-  margin: 1rem;
+image {
+  max-width: 100%;
 }
 
-.cart img {
-  width: 200px;
-  height: 250px;
-  object-fit: cover;
-  padding: 5px;
-  border-radius: 10px;
-}
-
-.cart .cart-item {
-  display: flex;
-  gap: 1rem;
-}
-
-.product-feature {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
-.product-feature .product-row {
-  display: flex;
-  align-items: center;
-  padding: 1rem;
-  gap: 1rem;
-  font-size: 13px;
-}
-
-.product-row i {
-  color: var(--text-200);
-}
-
-.product-row .feature {
-  background-color: var(--bg-300);
-  padding: 5px 8px;
-  border-radius: 15px;
-  width: max-content;
+button,
+input {
+  border: none;
+  outline: none;
+  background-color: inherit;
   cursor: pointer;
-  transition: background-color 0.3s ease-in-out, transform 0.2s ease-in-out,
-    box-shadow 0.2s ease-in-out;
-}
-
-.product-row .feature:hover {
-  background-color: var(--bg-200);
-  transition: background-color 0.3s ease-in-out;
-  color: var(--text-200);
-}
-
-.product-row .feature:active {
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
-  transform: scale(0.95);
-}
-
-.product-feature-wrapper {
-  padding: 1rem;
-}
-
-.product-feature input {
-  color: var(--text-200);
-  text-align: center;
-}
-
-.product-feature input::-webkit-inner-spin-button,
-.product-feature input::-webkit-outer-spin-button {
-  -webkit-appearance: none;
-}
-
-.product-feature .product-add-feature {
-  border: 1px solid var(--accent-100);
-  padding: 5px 10px;
-  border-radius: 15px;
-  color: var(--text-200);
-}
-
-.cart hr {
-  color: var(--text-200);
-  width: 1px;
-  opacity: 0.1;
-}
-
-.product-price {
-  padding: 1rem;
 }
